@@ -13,3 +13,10 @@ body {
   font-family: var(--font-family-sans);
   color: var(--color-text-body);
 }
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
