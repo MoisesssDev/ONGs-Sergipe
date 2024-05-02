@@ -32,5 +32,7 @@ describe 'Voluntario visita a página inicial' do
     expect(page).to have_content('Aracaju, Rua das Flores, 123', count: 4)
     expect(page).to have_link('Ver detalhes', count: 4)
     expect(page).to have_selector('img[src$="cantinho_do_ceu.png"]', count: 4)
+    expect(page).to have_content('Assistência Social', count: 4)
+    expect(page).to have_link('Ver mais')
   end
 end

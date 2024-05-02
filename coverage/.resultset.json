@@ -7,7 +7,7 @@
           null
         ]
       },
-      "/home/sept/projects/ongs-sergipe/app/models/ong.rb": {
+      "/home/sept/projects/ongs-sergipe/app/models/category.rb": {
         "lines": [
           1,
           1,
@@ -16,6 +16,14 @@
       },
       "/home/sept/projects/ongs-sergipe/app/models/application_record.rb": {
         "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/sept/projects/ongs-sergipe/app/models/ong.rb": {
+        "lines": [
+          1,
           1,
           1,
           null
@@ -50,6 +58,6 @@
         }
       }
     },
-    "timestamp": 1714679077
+    "timestamp": 1714684199
   }
 }
