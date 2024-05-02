@@ -9,4 +9,25 @@ describe 'Voluntario visita a página inicial' do
                                  'Organizações Não Governamentais (ONGs) em Sergipe.')
     expect(page).to have_link('Buscar por ONGs')
   end
+
+  it 'e vê a lista com 4 ONGs cadastradas' do
+    create(:ong, name: 'ONG A', description: 'Descrição da ONG A')
+    create(:ong, name: 'ONG B', description: 'Descrição da ONG B')
+    create(:ong, name: 'ONG C', description: 'Descrição da ONG C')
+    create(:ong, name: 'ONG D', description: 'Descrição da ONG D')
+    create(:ong, name: 'ONG E', description: 'Descrição da ONG E')
+
+    visit root_path
+
+    expect(page).to have_content('ONG A')
+    expect(page).to have_content('Descrição da ONG A')
+    expect(page).to have_content('ONG B')
+    expect(page).to have_content('Descrição da ONG B')
+    expect(page).to have_content('ONG C')
+    expect(page).to have_content('Descrição da ONG C')
+    expect(page).to have_content('ONG D')
+    expect(page).to have_content('Descrição da ONG D')
+    expect(page).not_to have_content('ONG E')
+    expect(page).not_to have_content('Descrição da ONG E')
+  end
 end
