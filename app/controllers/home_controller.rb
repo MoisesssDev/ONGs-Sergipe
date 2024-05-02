@@ -1,3 +1,5 @@
 class HomeController < ApplicationController
-  def index; end
+  def index
+    @ongs = Ong.limit(4)
+  end
 end
