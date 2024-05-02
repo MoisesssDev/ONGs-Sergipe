@@ -9,21 +9,49 @@ on:
       - main
 
 jobs:
-  ci_validation:
+  linters:
+    name: Linters
     runs-on: ubuntu-latest
-    env:
-      RAILS_ENV: test
-
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v3
-      
-    - name: Setup Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 3.2.2
-        bundler-cache: true
-        cache-version: 1
-  
-    - name: Test
-      run: bin/rails test
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Ruby and install gems
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Install bundler-audit
+        run: gem install bundler-audit
+      # Add or replace any other lints here
+      - name: Security audit dependencies
+        run: bundle-audit check --update
+      - name: Lint Ruby files
+        run: bundle exec rubocop
+
+  tests:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Ruby and install gems
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.11
+          cache: yarn
+
+      - name: Setup test database
+        env:
+          RAILS_ENV: test
+        run: |
+          bin/rails db:setup
+
+      - name: Run tests
+        run: bin/rake 
