@@ -7,10 +7,34 @@
           null
         ]
       },
+      "/home/sept/projects/ongs-sergipe/app/models/category.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/sept/projects/ongs-sergipe/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/sept/projects/ongs-sergipe/app/models/ong.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
       "/home/sept/projects/ongs-sergipe/app/controllers/home_controller.rb": {
         "lines": [
           1,
           1,
+          2,
+          null,
           null
         ]
       },
@@ -32,16 +56,8 @@
         ],
         "branches": {
         }
-      },
-      "/home/sept/projects/ongs-sergipe/app/models/application_record.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
       }
     },
-    "timestamp": 1714623464
+    "timestamp": 1714684199
   }
 }
