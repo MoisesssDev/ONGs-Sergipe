@@ -30,6 +30,7 @@ jobs:
         run: bundle exec rubocop
 
   test:
+    name: Test
     runs-on: ubuntu-latest
     env:
       RAILS_ENV: test
