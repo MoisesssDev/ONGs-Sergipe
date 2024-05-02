@@ -29,5 +29,8 @@ describe 'Voluntario visita a página inicial' do
     expect(page).to have_content('Descrição da ONG D')
     expect(page).not_to have_content('ONG E')
     expect(page).not_to have_content('Descrição da ONG E')
+    expect(page).to have_content('Aracaju, Rua das Flores, 123', count: 4)
+    expect(page).to have_link('Ver detalhes', count: 4)
+    expect(page).to have_selector('img[src$="cantinho_do_ceu.png"]', count: 4)
   end
 end
