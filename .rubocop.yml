@@ -1,0 +1,19 @@
+require:
+  - rubocop-rails
+
+AllCops:
+  NewCops: disable
+  TargetRubyVersion: 3.2.2
+  Exclude:
+    - 'bin/**/*'
+    - 'vendor/**/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'spec/rails_helper.rb'
+
+AllCops:
+    SuggestExtensions: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
