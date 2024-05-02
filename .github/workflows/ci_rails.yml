@@ -50,7 +50,7 @@ jobs:
       - name: Setup test database
         env:
           RAILS_ENV: test
-        run: bin/rails db:schema:load
+          run: bin/rake db:setup
 
       - name: Run tests
         run: bin/rake 
