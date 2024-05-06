@@ -26,4 +26,17 @@ describe 'Voluntario visualiza todas as ONGs' do
     expect(page).to have_selector('img[src$="cantinho_do_ceu.png"]', count: 5)
     expect(page).to have_content('Assistência Social', count: 5)
   end
+
+  it 'mas não há ONGs cadastradas' do
+    visit ongs_path
+
+    expect(page).to have_content('Nenhuma ONG cadastrada')
+  end
+
+  it 'e volta para a página inicial' do
+    visit ongs_path
+    click_on 'Voltar'
+
+    expect(current_path).to eq(root_path)
+  end
 end

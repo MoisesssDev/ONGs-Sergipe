@@ -1,6 +1,15 @@
 
 <div class="container">
-  <div class="row">
-    <%= render @ongs %>
-  </div>
+  <% if @ongs.present? %>
+    <div class="row">
+      <%= render @ongs %>
+    </div>
+  <% else %>
+    <div>
+      <h2 class="text-center">Nenhuma ONG cadastrada</h2>
+    </div>
+  <% end %>
+  <%= link_to root_path, class: 'icon-link icon-link-hover' do %>
+      <i class="bi bi-arrow-left"></i>Voltar
+  <% end %>
 </div>
