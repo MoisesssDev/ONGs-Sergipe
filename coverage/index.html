@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2024-05-07T16:17:37-03:00">2024-05-07T16:17:37-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2024-05-07T16:31:05-03:00">2024-05-07T16:31:05-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.13
+         1.29
        </span>
     </span> hits/line
     )
@@ -88,18 +88,18 @@
             <td class="cell--number">3</td>
             <td class="cell--number">3</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.33</td>
+            <td class="cell--number">2.67</td>
             
           </tr>
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#6c2ef06b80dc95f267ad271adeea95fc38e51ee5" class="src_link" title="app/controllers/ongs_controller.rb">app/controllers/ongs_controller.rb</a></td>
             <td class="yellow strong cell--number t-file__coverage">87.50 %</td>
-            <td class="cell--number">14</td>
+            <td class="cell--number">15</td>
             <td class="cell--number">8</td>
             <td class="cell--number">7</td>
             <td class="cell--number">1</td>
-            <td class="cell--number">1.13</td>
+            <td class="cell--number">1.50</td>
             
           </tr>
         
@@ -177,7 +177,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.38
+         1.69
        </span>
     </span> hits/line
     )
@@ -235,18 +235,18 @@
             <td class="cell--number">3</td>
             <td class="cell--number">3</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.33</td>
+            <td class="cell--number">2.67</td>
             
           </tr>
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#6c2ef06b80dc95f267ad271adeea95fc38e51ee5" class="src_link" title="app/controllers/ongs_controller.rb">app/controllers/ongs_controller.rb</a></td>
             <td class="yellow strong cell--number t-file__coverage">87.50 %</td>
-            <td class="cell--number">14</td>
+            <td class="cell--number">15</td>
             <td class="cell--number">8</td>
             <td class="cell--number">7</td>
             <td class="cell--number">1</td>
-            <td class="cell--number">1.13</td>
+            <td class="cell--number">1.50</td>
             
           </tr>
         
@@ -782,8 +782,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="5" data-linenumber="3">
-            <span class="hits">5</span>
+          <li class="covered" data-hits="6" data-linenumber="3">
+            <span class="hits">6</span>
             
 
             
@@ -912,8 +912,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="7">
+            <span class="hits">2</span>
             
 
             
@@ -945,35 +945,35 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="10">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="10">
+            
             
 
             
 
-            <code class="ruby">      @pagy, @ongs = pagy(Ong.where(&#39;name LIKE ?&#39;, &quot;%#{params[:query]}%&quot;))</code>
+            <code class="ruby">      # @pagy, @ongs = pagy(Ong.where(&#39;name LIKE ?&#39;, &quot;%#{params[:query]}%&quot;))</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="11">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="11">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">      @pagy, @ongs = pagy(Ong.where(&#39;name LIKE :query OR description LIKE :query&#39;, query: &quot;%#{params[:query]}%&quot;))</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="12">
+            <span class="hits">2</span>
             
 
             
 
             <code class="ruby">      render :index</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="12">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -984,12 +984,23 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
             
             
 
