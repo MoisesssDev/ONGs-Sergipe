@@ -1,5 +1,5 @@
 class OngsController < ApplicationController
   def index
-    @ongs = Ong.all
+    @pagy, @ongs = pagy(Ong.all)
   end
 end
