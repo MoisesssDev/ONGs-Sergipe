@@ -1,15 +1,18 @@
 
 <div class="container">
   <% if @ongs.present? %>
+    <%= "#{@ongs.count} ONG foi encontrada." if @ongs.count == 1 %>
+    <%= "#{@ongs.count} ONGs foram encontradas." if @ongs.count > 1 %>
     <div class="row">
       <%= render @ongs %>
+      <%== pagy_bootstrap_nav(@pagy) %>
     </div>
   <% else %>
     <div>
-      <h2 class="text-center">Nenhuma ONG cadastrada</h2>
+      <h2 class="text-center">Nenhuma ONG encontrada.</h2>
     </div>
   <% end %>
-  <%== pagy_bootstrap_nav(@pagy) %>
+
   <%= link_to root_path, class: 'icon-link icon-link-hover' do %>
       <i class="bi bi-arrow-left"></i>Voltar
   <% end %>
