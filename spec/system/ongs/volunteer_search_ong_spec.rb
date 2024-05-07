@@ -34,4 +34,12 @@ describe 'Voluntário busca ONGs' do
     expect(page).to have_selector('img[src$="cantinho_do_ceu.png"]')
     expect(page).to have_content('Assistência Social')
   end
+
+  it 'e não há resultados' do
+    visit root_path
+    fill_in 'query', with: 'ONG C'
+    click_on 'buscar'
+
+    expect(page).to have_content('Nenhuma ONG encontrada.')
+  end
 end
