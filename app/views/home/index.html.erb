@@ -14,10 +14,10 @@
 
   <div class="row mb-2">
     <%= render @ongs %>
-    <a href="#" class="icon-link icon-link-hover">
-      Ver mais
-      <i class="bi bi-arrow-right"></i>
-    </a>
+    
+    <%= link_to ongs_path, class: 'icon-link icon-link-hover' do %>
+      Ver mais <i class="bi bi-arrow-right"></i>
+    <% end %>
   </div>
 
 </main>

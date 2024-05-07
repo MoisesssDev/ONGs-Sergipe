@@ -1,1 +1,8 @@
 FactoryBot.create(:ong)
+FactoryBot.create(:ong, name: 'Amor a vida')
+FactoryBot.create(:ong, name: 'Viva bem')
+FactoryBot.create(:ong, name: 'Educação para todos')
+FactoryBot.create(:ong, name: 'Criança feliz')
+FactoryBot.create(:ong, name: 'Amor ao próximo')
+FactoryBot.create(:ong, name: 'Viva a vida')
+FactoryBot.create(:ong, name: 'Cuida do outros')
