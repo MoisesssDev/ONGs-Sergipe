@@ -5,9 +5,11 @@
 /* Colors */
 :root {
   --color-default: #fff7f7;
-  --color-primary: #27a776;
-  --color-secondary: #161718;
+  --color-primary: #65d7ab;
+  --color-secondary: #574b5c;
   --gradient-primary: linear-gradient(217deg, rgba(251,215,255,1) 10%, rgba(255,222,193,1) 80%);
+  --gradient-secondary: linear-gradient(100deg, rgb(187, 129, 191) 5%, rgb(252, 194, 142) 80%);
+  --gradient-black: linear-gradient(to top left,#538fb5,#5f4f98);
 }
 
 /* Smooth scroll behavior */
