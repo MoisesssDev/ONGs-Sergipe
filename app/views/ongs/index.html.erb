@@ -9,13 +9,13 @@
   <% if @ongs.present? %>
     <p>
       <small>
-        <%= "#{@ongs.count} ONG foi encontrada." if @ongs.count == 1 %>
-        <%= "#{@ongs.count} ONGs foram encontradas." if @ongs.count > 1 %>
+        <%= "#{@counting} ONG foi encontrada." if @counting == 1 %>
+        <%= "#{@counting} ONGs foram encontradas." if @counting > 1 %>
       </small>
     </p>
     <div class="row">
       <%= render @ongs %>
-      <%== pagy_bootstrap_nav(@pagy) %>
+      <%== pagy_bootstrap_nav(@pagy) if @counting > 6 %>
     </div>
   <% else %>
     <div>
