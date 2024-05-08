@@ -1,0 +1,8 @@
+<%= form_with(url: search_ongs_path, method: :get) do |f| %>
+  <div class="input-group mb-3 mx-auto mb-5" style="max-width: 600px;">
+    <%= f.text_field :query, class: 'form-control', placeholder: 'Buscar ...' %>
+    <button class="btn btn-outline-secondary" type="submit" name="buscar">
+      <i class="bi bi-search"></i>
+    </button>
+  </div>
+<% end %>

@@ -1,0 +1,17 @@
+.text-gradient {
+
+  &-primary {
+    background: var(--gradient-secondary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &-secondary {
+    background: var(--gradient-black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+}

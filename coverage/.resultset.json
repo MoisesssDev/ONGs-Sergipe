@@ -4,6 +4,7 @@
       "/home/sept/projects/ongs-sergipe/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          1,
           null
         ]
       },
@@ -26,6 +27,12 @@
           1,
           1,
           1,
+          null,
+          1,
+          11,
+          null,
+          6,
+          null,
           null
         ]
       },
@@ -33,13 +40,14 @@
         "lines": [
           1,
           1,
-          4,
+          8,
           null,
           null
         ]
       },
       "/home/sept/projects/ongs-sergipe/app/controllers/application_controller.rb": {
         "lines": [
+          1,
           1,
           null
         ]
@@ -49,6 +57,15 @@
           1,
           1,
           3,
+          null,
+          3,
+          null,
+          null,
+          1,
+          4,
+          null,
+          4,
+          4,
           null,
           null
         ]
@@ -67,6 +84,6 @@
         }
       }
     },
-    "timestamp": 1715024198
+    "timestamp": 1715200645
   }
 }

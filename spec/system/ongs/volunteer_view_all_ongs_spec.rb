@@ -30,7 +30,7 @@ describe 'Voluntario visualiza todas as ONGs' do
   it 'mas não há ONGs cadastradas' do
     visit ongs_path
 
-    expect(page).to have_content('Nenhuma ONG cadastrada')
+    expect(page).to have_content('Nenhuma ONG encontrada.')
   end
 
   it 'e volta para a página inicial' do

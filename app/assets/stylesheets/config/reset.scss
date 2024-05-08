@@ -1,14 +1,15 @@
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Inter", sans-serif;
-  --font-secondary: "Cardo", sans-serif;
+  --font-default: "Archivo", sans-serif;
 }
 
 /* Colors */
 :root {
-  --color-default: #fafafa;
-  --color-primary: #27a776;
-  --color-secondary: #161718;
+  --color-default: #fff7f7;
+  --color-primary: #65d7ab;
+  --color-secondary: #574b5c;
+  --gradient-primary: linear-gradient(217deg, rgba(251,215,255,1) 10%, rgba(255,222,193,1) 80%);
+  --gradient-secondary: linear-gradient(100deg, rgb(197, 136, 201) 5%, rgb(204, 159, 119) 80%);
+  --gradient-black: linear-gradient(to top left,#538fb5,#5f4f98);
 }
 
 /* Smooth scroll behavior */
@@ -31,6 +32,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-primary);
+  font-family: var(--font-default);
 }
 
