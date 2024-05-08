@@ -42,4 +42,22 @@ describe 'Voluntário busca ONGs' do
 
     expect(page).to have_content('Nenhuma ONG encontrada.')
   end
+
+  it 'mas não preenche nada' do
+    create(:ong, name: 'ONG A', description: 'Descrição da ONG A')
+    create(:ong, name: 'ONG B', description: 'Descrição da ONG B')
+
+    visit root_path
+    click_on 'buscar'
+
+    expect(page).to have_content('ONG A')
+    expect(page).to have_content('Descrição da ONG A')
+    expect(page).to have_content('2 ONGs foram encontradas.')
+    expect(page).to have_content('ONG B')
+    expect(page).to have_content('Descrição da ONG B')
+    expect(page).to have_content('Aracaju, Rua das Flores, 123', count: 2)
+    expect(page).to have_link('Ver detalhes', count: 2)
+    expect(page).to have_selector('img[src$="cantinho_do_ceu.png"]', count: 2)
+    expect(page).to have_content('Assistência Social', count: 2)
+  end
 end
