@@ -1,6 +1,6 @@
 
 <div class="container">
-  <%= link_to root_path, class: 'icon-link icon-link-hover' do %>
+  <%= link_to root_path, class: 'icon-link icon-link-hover mb-5' do %>
       <i class="bi bi-arrow-left"></i>Voltar
   <% end %>
 
@@ -8,7 +8,7 @@
 
   <% if @ongs.present? %>
     <p>
-      <small>
+      <small class="fw-medium text-gradient-secondary ms-lg-5">
         <%= "#{@counting} ONG foi encontrada." if @counting == 1 %>
         <%= "#{@counting} ONGs foram encontradas." if @counting > 1 %>
       </small>

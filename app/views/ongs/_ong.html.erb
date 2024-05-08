@@ -1,10 +1,10 @@
 
-<div class="col-sm-4 text-center rounded-3 pt-3 pb-3 shadow mb-4 mx-auto ms-lg-5 bg-white">
+<div class="col-md-4 text-center rounded-3 pt-3 pb-3 shadow mb-4 mx-auto ms-md-5 bg-white">
   <%= image_tag ong.image, class: 'bd-placeholder-img rounded-circle', width: 160, height: 160 %>
-  <h3 class="display-7 fw-normal"><%= ong.name %></h3>
+  <h3 class="display-7 fw-medium text-gradient-secondary lh-1"><%= ong.name %></h3>
 
-  <strong class="d-inline-block mb-2 text-info-emphasis"><%= ong.category.name %></strong>
-  <div class="mb-1 text-muted"><%= "#{ong.city}, #{ong.address}" %></div>
+  <strong class="d-inline-block mb-2 text-gradient-secondary lh-1 font-monospace"><%= ong.category.name %></strong>
+  <small class="mb-1 text-muted d-block mb-3"><%= "#{ong.city}, #{ong.address}" %></small>
 
   <p><%= ong.description %></p>
 
