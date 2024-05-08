@@ -1,6 +1,8 @@
-<div class="container-background-gradient text-center">
+<div class="container-background-gradient">
   <div class="col-md-4 pb-5 mb-5 mx-auto">
+
     <h1 class="display-5 fw-normal">ONGs em Sergipe</h1>
+
     <p class="lead fw-small fs-6">
       Descubra e Apoie Causas Locais. Explore ONGs e Faça a Diferença na Comunidade! 
     </p>
@@ -9,9 +11,11 @@
   </div>
 </div>
 
-<main class="container">
+<main class="container border-top pt-5">
 
-  <div class="row mb-2">
+  <h2 class="display-7 mb-5 fw-normal">Conheça algumas iniciativas:</h2>
+
+  <div class="row mb-5">
     <%= render @ongs %>
     
     <%= link_to ongs_path, class: 'icon-link icon-link-hover' do %>
