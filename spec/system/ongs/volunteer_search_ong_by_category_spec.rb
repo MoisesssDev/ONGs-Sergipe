@@ -18,14 +18,14 @@ describe 'Voluntario busca ONGs por categoria ' do
     expect(page).not_to have_content('ONG dos Crianças')
   end
 
-  xit 'e não encontra ONGs' do
+  it 'e não encontra ONGs' do
     # Arrange
     create(:category, name: 'Animais')
-    create(:ong, name: 'ONG dos Animais')
+    create(:ong, name: 'ONG de Assistência Social')
 
     # Act
     visit root_path
-    click_on 'Assistência Social'
+    click_on 'Animais'
 
     # Assert
     expect(page).to have_content('Nenhuma ONG encontrada')
