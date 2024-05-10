@@ -1,0 +1,14 @@
+<%= form_with(url: search_ongs_path, method: :get) do |f| %>
+  <div class="input-group mb-3 mx-auto mb-5" style="max-width: 600px;">
+    <%= f.text_field :query, class: 'form-control', placeholder: 'Buscar ...' %>
+    <%= f.button '', class: 'btn btn-outline-secondary' do %>
+      <i class="bi bi-search"></i>
+    <% end %>
+  </div>
+
+  <a href="#" class="badge text-bg-gradient-primary ms-2">Animais</a>
+  <a href="#" class="badge text-bg-gradient-primary ms-2">Animais</a>
+  <a href="#" class="badge text-bg-gradient-primary ms-2">Animais</a>
+  <a href="#" class="badge text-bg-gradient-primary ms-2">Animais</a>
+  <a href="#" class="badge text-bg-gradient-primary ms-2">Animais</a>
+<% end %>
