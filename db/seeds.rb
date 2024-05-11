@@ -7,6 +7,9 @@ category_six = Category.create(name: 'Cultura')
 category_seven = Category.create(name: 'Esporte')
 category_eight = Category.create(name: 'Direitos Humanos')
 category_nine = Category.create(name: 'Desenvolvimento Comunitário')
+Category.create(name: 'Arte e Cultura')
+Category.create(name: 'Tecnologia e Inovação Social')
+Category.create(name: 'Inclusão Social')
 
 
 FactoryBot.create(:ong, category: category_one)

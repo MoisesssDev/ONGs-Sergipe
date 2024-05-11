@@ -1,6 +1,17 @@
 require 'rails_helper'
 
 describe 'Voluntario busca ONGs por categoria ' do
+  it 'e vê apenas 7 categorias' do
+    # Arrange
+    create_list(:category, 8)
+
+    # Act
+    visit root_path
+
+    # Assert
+    expect(page).to have_link('Assistência Social', count: 7)
+  end
+
   it 'e encontra ONGs' do
     # Arrange
     category = create(:category, name: 'Animais')
