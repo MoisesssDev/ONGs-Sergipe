@@ -7,7 +7,14 @@
       Descubra e Apoie Causas Locais. Explore ONGs e Faça a Diferença na Comunidade! 
     </p>
 
-    <%= render 'shared/search', categories: @categories %>
+    <%= render 'shared/search' %>
+    
+    <div class="shadow-sm p-2 rounded">
+      <p class="text-gradient-secondary fw-light text-start" style="font-size: 14px;">
+        <i class="bi bi-tags"> Principais categorias:</i>
+      </p>
+      <%= render 'shared/search_by_category', categories: @categories %> 
+    </div>
   </div>
 </div>
 
