@@ -1,0 +1,12 @@
+.arrow-down-circle {
+  font-size: 3rem;
+  background: var(--gradient-secondary);
+  -webkit-background-clip: text ;
+  background-clip: text ;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s all;
+}
+
+.arrow-down-circle:hover {
+  font-size: 2.8rem;
+}

@@ -1,0 +1,5 @@
+<div class="text-start">
+  <% categories.each do | category | %>
+    <%= link_to category.name, category_ongs_path(category), class: 'badge text-bg-gradient-primary ms-2 mb-1' %>
+  <% end %>
+</div>

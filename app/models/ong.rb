@@ -7,4 +7,8 @@ class Ong < ApplicationRecord
 
     where('name LIKE :query OR description LIKE :query', query: "%#{query}%")
   end
+
+  def self.search_by_category(id)
+    where(category_id: id)
+  end
 end
