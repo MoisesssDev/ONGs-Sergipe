@@ -12,6 +12,7 @@
         "lines": [
           1,
           1,
+          1,
           null
         ]
       },
@@ -24,6 +25,7 @@
       },
       "/home/sept/projects/ongs-sergipe/app/models/ong.rb": {
         "lines": [
+          1,
           1,
           1,
           1,
@@ -96,6 +98,6 @@
         }
       }
     },
-    "timestamp": 1715660660
+    "timestamp": 1715801304
   }
 }

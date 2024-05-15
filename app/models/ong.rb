@@ -1,6 +1,7 @@
 class Ong < ApplicationRecord
   has_one_attached :image
   belongs_to :category
+  validates :name, :description, :email, :city, :address, presence: true
 
   def self.search(query)
     return Ong.all if query.blank?
