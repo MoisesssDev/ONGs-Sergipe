@@ -25,7 +25,7 @@ jobs:
         run: gem install bundler-audit
       # Add or replace any other lints here
       - name: Security audit dependencies
-        run: bundle-audit check --update
+        run: bundle exec bundle-audit check
       - name: Lint Ruby files
         run: bundle exec rubocop
 
