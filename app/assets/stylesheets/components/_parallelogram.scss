@@ -1,0 +1,19 @@
+.parallelogram {
+  z-index: -1;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom-color: rgba(251,215,255,1);
+  position: relative;
+  // top: -50px;
+}
+.parallelogram:after {
+  content: '';
+  position: absolute;
+  // left: -50px;
+  // top: 50px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top-color: rgba(251,215,255,1);
+}
