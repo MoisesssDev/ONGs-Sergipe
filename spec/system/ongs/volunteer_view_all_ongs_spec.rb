@@ -9,7 +9,7 @@ describe 'Voluntario visualiza todas as ONGs' do
     create(:ong, name: 'ONG E', description: 'Descrição da ONG E')
 
     visit root_path
-    click_on 'Ver mais'
+    click_on 'buscar'
 
     expect(page).to have_content('ONG A')
     expect(page).to have_content('Descrição da ONG A')
