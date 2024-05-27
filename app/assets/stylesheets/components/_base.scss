@@ -1,0 +1,21 @@
+.base {
+  z-index: -1;
+  background: rgba(251,215,255,1);
+  display: inline-block;
+  height: 250px;
+  margin-left: 20px;
+  margin-top: 55px;
+  position: relative;
+  width: 100px;
+}
+.base:before {
+  border-bottom: 35px solid rgba(251,215,255,1);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: -35px;
+  width: 0;
+}

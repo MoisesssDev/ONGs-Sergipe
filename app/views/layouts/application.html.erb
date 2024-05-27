@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= favicon_link_tag 'ONGsSergipeLogo.png' %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
@@ -19,7 +20,7 @@
       <ul class="nav col-12 col-md-auto mb-2 fw-medium justify-content-center mb-md-0">
         <%= link_to 'Home', root_path, class: 'nav-link px-2 text-gradient-primary' %>
         <li><a href="#" class="nav-link px-2 text-gradient-secondary">FAQs</a></li>
-        <li><a href="#" class="nav-link px-2 text-gradient-secondary">About</a></li>
+        <li><a href="#about" class="nav-link px-2 text-gradient-secondary">About</a></li>
       </ul>
     </header>
     <%= yield %>

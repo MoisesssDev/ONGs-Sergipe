@@ -2,7 +2,7 @@
   <div class="col-md-5 pb-5 mb-5 mx-auto">
 
     <div class="mb-5">
-      <h1 class="display-5 fw-medium text-gradient-secondary fst-italic">Connect Sergipe</h1>
+      <h1 class="display-5 text-gradient-secondary">Connect Sergipe</h1>
 
       <p class="lead fw-small fs-6 text-gradient-secondary">
         Descubra e Apoie Causas Locais. Explore ONGs e Faça a Diferença na Comunidade! 
@@ -25,24 +25,15 @@
 </div>
 
 <div class="text-center mt-4">
-  <a href="#container-ongs" class="arrow-down-circle">
+  <a href="#about" class="arrow-down-circle">
     <i class="bi bi-box-arrow-in-down"></i>
   </a>
 </div>
 
-<main class="container border-top pt-5" style="margin-top: 150px;" id="container-ongs">
+<main class="border-top pt-4" style="margin-top: 80px;">
 
-  <h4 class="display-9 mb-5 fw-light text-center text-gradient-secondary">Conheça algumas iniciativas:</h4>
-
-  <div class="row">
-    <div class="pb-3 text-end">
-      <%= link_to ongs_path, class: 'icon-link icon-link-hover' do %>
-        Ver mais <i class="bi bi-arrow-right"></i>
-      <% end %>
-    </div>
-
-    <%= render @ongs %>
-
+  <div id="about" class="container pt-5 border-top shadow position-relative mb-5">
+      <%= render 'about' %>
   </div>
 
 </main>

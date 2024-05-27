@@ -1,0 +1,13 @@
+.border-around {
+  border: 1px solid var(--color-secondary);
+  padding: 15px 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+    border: 1px solid var(--color-default);
+    box-shadow: 1px 4px 15px rgb(252, 224, 255);
+  }
+}
