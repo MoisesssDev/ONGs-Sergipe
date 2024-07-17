@@ -18,4 +18,8 @@ class OngsController < ApplicationController
     @pagy, @ongs = pagy(Ong.search_by_category(params[:category_id]))
     render :index
   end
+
+  def show
+    @ong = Ong.find(params[:id])
+  end
 end

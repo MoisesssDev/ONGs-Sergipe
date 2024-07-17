@@ -1,0 +1,15 @@
+<div class="container-background-gradient-black mt-5">
+  <div class="d-flex gap-4 flex-wrap justify-content-center align-items-center">
+    <%= image_tag @ong.image, class: 'bd-placeholder-img rounded-circle shadow' %>
+    <div class="col-6 col-md-4">
+      <h1 class="text-gradient-primary"><%= @ong.name %></h1>
+      <p class="fs-6 text-gradient-primary"><%= @ong.description %></p>
+    </div>
+  </div>
+  <div class="d-flex flex-wrap justify-content-center gap-4 mt-5 fw-medium text-gradient-primary text-center">
+    <small><i class="bi bi-envelope me-1 "></i><%= @ong.email %></small>
+    <small><i class="bi bi-instagram me-1 "></i><%= @ong.instagram %></small>
+    <small><i class="bi bi-geo-alt me-1 "></i><%= @ong.city %>, <%= @ong.address %></small>
+    <small><i class="bi bi-whatsapp me-1 "></i><%= @ong.whatsapp %></small>
+  </div>
+</div>
