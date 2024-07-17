@@ -8,22 +8,11 @@
           null
         ]
       },
-      "/home/sept/projects/rails/ongs-sergipe/app/models/ong.rb": {
+      "/home/sept/projects/rails/ongs-sergipe/app/models/category.rb": {
         "lines": [
           1,
           1,
           1,
-          1,
-          null,
-          1,
-          2,
-          null,
-          2,
-          null,
-          null,
-          1,
-          0,
-          null,
           null
         ]
       },
@@ -34,11 +23,22 @@
           null
         ]
       },
-      "/home/sept/projects/rails/ongs-sergipe/app/models/category.rb": {
+      "/home/sept/projects/rails/ongs-sergipe/app/models/ong.rb": {
         "lines": [
           1,
           1,
           1,
+          1,
+          null,
+          1,
+          14,
+          null,
+          8,
+          null,
+          null,
+          1,
+          4,
+          null,
           null
         ]
       },
@@ -46,8 +46,8 @@
         "lines": [
           1,
           1,
-          1,
-          1,
+          12,
+          12,
           null,
           null
         ]
@@ -63,23 +63,23 @@
         "lines": [
           1,
           1,
-          0,
+          2,
           null,
-          0,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
+          2,
           null,
           null,
           1,
-          0,
+          6,
           null,
-          0,
-          0,
+          6,
+          6,
+          null,
+          null,
+          1,
+          2,
+          null,
+          2,
+          2,
           null,
           null,
           1,
@@ -102,6 +102,6 @@
         }
       }
     },
-    "timestamp": 1721236574
+    "timestamp": 1721236794
   }
 }
