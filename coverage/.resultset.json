@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/sept/projects/ongs-sergipe/app/helpers/application_helper.rb": {
+      "/home/sept/projects/rails/ongs-sergipe/app/helpers/application_helper.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/home/sept/projects/ongs-sergipe/app/models/category.rb": {
+      "/home/sept/projects/rails/ongs-sergipe/app/models/category.rb": {
         "lines": [
           1,
           1,
@@ -16,14 +16,14 @@
           null
         ]
       },
-      "/home/sept/projects/ongs-sergipe/app/models/application_record.rb": {
+      "/home/sept/projects/rails/ongs-sergipe/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/home/sept/projects/ongs-sergipe/app/models/ong.rb": {
+      "/home/sept/projects/rails/ongs-sergipe/app/models/ong.rb": {
         "lines": [
           1,
           1,
@@ -42,7 +42,7 @@
           null
         ]
       },
-      "/home/sept/projects/ongs-sergipe/app/controllers/home_controller.rb": {
+      "/home/sept/projects/rails/ongs-sergipe/app/controllers/home_controller.rb": {
         "lines": [
           1,
           1,
@@ -52,14 +52,14 @@
           null
         ]
       },
-      "/home/sept/projects/ongs-sergipe/app/controllers/application_controller.rb": {
+      "/home/sept/projects/rails/ongs-sergipe/app/controllers/application_controller.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/home/sept/projects/ongs-sergipe/app/controllers/ongs_controller.rb": {
+      "/home/sept/projects/rails/ongs-sergipe/app/controllers/ongs_controller.rb": {
         "lines": [
           1,
           1,
@@ -84,7 +84,7 @@
           null
         ]
       },
-      "/home/sept/projects/ongs-sergipe/app/jobs/application_job.rb": {
+      "/home/sept/projects/rails/ongs-sergipe/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -98,6 +98,6 @@
         }
       }
     },
-    "timestamp": 1716308446
+    "timestamp": 1721227393
   }
 }
