@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>OngsSergipe</title>
+    <title>Connect Sergipe</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -24,5 +24,13 @@
       </ul>
     </header>
     <%= yield %>
+
+    <footer class="container-background-gradient-black">
+      <div class="py-5">
+        <p class="text-center text-gradient-primary">
+          &copy; <%= Time.current.year %> Connect Sergipe. All rights reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
