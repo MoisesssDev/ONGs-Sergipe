@@ -12,7 +12,7 @@ describe 'Voluntario visita a página inicial' do
   it 'e vê mensagem Sobre nós' do
     visit root_path
 
-    click_on 'About'
+    click_on 'Sobre nós'
 
     expect(page).to have_content('Sobre nós')
     expect(page).to have_content('Para que essa plataforma foi criada?')
