@@ -13,14 +13,22 @@
 
   <body>
     <header class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-1 mb-2 border-bottom">
-      <a class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-        <%= image_tag 'ONGsSergipeLogo.png', width: 80 %>
-      </a>
 
-      <ul class="nav col-12 col-md-auto mb-2 fw-medium justify-content-center mb-md-0">
-        <%= link_to 'Home', root_path, class: 'nav-link px-2 text-gradient-primary' %>
-        <li><a href="#" class="nav-link px-2 text-gradient-secondary">FAQs</a></li>
-        <li><a href="#about" class="nav-link px-2 text-gradient-secondary">About</a></li>
+      <%= link_to root_path, class: 'text-decoration-none' do %>
+        <%= image_tag 'ONGsSergipeLogo.png', width: 80 %>
+        <span class="text-gradient-secondary font-title">Connect Sergipe</span>
+      <% end %>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li>
+          <small>
+            <%= link_to root_path, class: 'nav-link px-2 text-gradient-primary' do%>
+              Página inicial
+            <% end %>
+          </small>
+        </li>
+        <li><small><a href="#about" class="nav-link px-2 text-gradient-secondary">Sobre nós</a></small></li>
+        <li><small><a href="#" class="nav-link px-2 text-gradient-secondary">FAQs</a></small></li>
       </ul>
     </header>
     <%= yield %>

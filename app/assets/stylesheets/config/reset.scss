@@ -1,5 +1,5 @@
 :root {
-  --font-default: "Archivo", sans-serif;
+  --font-default: "Roboto", sans-serif; 
 }
 
 /* Colors */
@@ -33,5 +33,14 @@ h4,
 h5,
 h6 {
   font-family: var(--font-default);
+}
+
+small {
+  font-size: 0.8rem;
+  letter-spacing: 1.1px;
+}
+
+p {
+  font-size: 0.9rem;
 }
 
