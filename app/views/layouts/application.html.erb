@@ -19,10 +19,16 @@
         <span class="text-gradient-secondary font-title">Connect Sergipe</span>
       <% end %>
 
-      <ul class="nav col-12 col-md-auto mb-2 fw-light justify-content-center mb-md-0">
-        <%= link_to 'Página inicial', root_path, class: 'nav-link px-2 text-gradient-primary' %>
-        <li><a href="#about" class="nav-link px-2 text-gradient-secondary">Sobre nós</a></li>
-        <li><a href="#" class="nav-link px-2 text-gradient-secondary">FAQs</a></li>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li>
+          <small>
+            <%= link_to root_path, class: 'nav-link px-2 text-gradient-primary' do%>
+              Página inicial
+            <% end %>
+          </small>
+        </li>
+        <li><small><a href="#about" class="nav-link px-2 text-gradient-secondary">Sobre nós</a></small></li>
+        <li><small><a href="#" class="nav-link px-2 text-gradient-secondary">FAQs</a></small></li>
       </ul>
     </header>
     <%= yield %>
