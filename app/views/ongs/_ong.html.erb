@@ -3,10 +3,10 @@
   <%= image_tag ong.image, class: 'bd-placeholder-img rounded-circle', width: 160, height: 160 %>
   <h4 class="display-7 fw-light text-gradient-secondary lh-1"><%= ong.name %></h4>
 
-  <strong class="d-inline-block mb-2 text-gradient-primary lh-1 font-monospace"><%= ong.category.name %></strong>
-  <small class="mb-1 text-muted d-block mb-3"><%= "#{ong.city}, #{ong.address}" %></small>
+  <strong class="d-inline-block font-title mb-2 text-gradient-primary lh-1"><%= ong.category.name %></strong>
+  <small class="mb-1 fw-medium d-block mb-3"><%= "#{ong.city}, #{ong.address}" %></small>
 
-  <p><%= ong.description %></p>
+  <p class=" mx-auto col-9 fw-light"><%= ong.description %></p>
 
   <%= link_to 'Ver detalhes »', ong_path(ong), class: 'btn btn-primary' %>
 </div>
